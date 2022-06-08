@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Coding Quiz Highscores</title>
-</head>
-<body>
-    <Header>
-        <!--To go back to home page and take quiz again if wanted-->
-        <h1>
-            <a href="index.html">Coding Quiz</a>
-        </h1>
-        <!--Can add more links for future development-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="highscores.html">View Highscores</a>
-                </li>
-            </ul>
-        </nav>
-    </Header>
-<!--Section to display highscores with a title-->
-<section>
-    <h2>Highscores</h2>
-    <!--Where the highscores will be displayed-->
-    <ul>
-        <li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Highscores</title>
 
-        </li>
-    </ul>
-</section>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&display=swap" rel="stylesheet">
+  </head>
 
-</body>
+  <body>
+    <div class="wrapper">
+      <h1>Highscores</h1>
+      <ol id="highscores"></ol>
 
-<script src="./assets/script.js"></script>
+      <a href="./index.html"><button>Go Back</button></a>
+      <button id="clear">Clear Highscores</button>
+    </div>
+
+    <script src="./assets/scores.js"></script>
+  </body>
 </html>
